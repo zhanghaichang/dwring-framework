@@ -7,3 +7,8 @@ spring:
         server-addr: 127.0.0.1:8848
 server:
   port: 8001
+
+#开启Hystrix降级处理
+feign:
+  hystrix:
+    enabled: true

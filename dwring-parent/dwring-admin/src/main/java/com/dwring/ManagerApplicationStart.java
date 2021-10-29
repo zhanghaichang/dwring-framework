@@ -3,18 +3,16 @@ package com.dwring;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
-import org.springframework.cloud.openfeign.EnableFeignClients;
 
 /**
  * @author zhanghaichang
  */
-@EnableFeignClients
 @EnableDiscoveryClient
 @SpringBootApplication
-public class AppApplicationStart {
+public class ManagerApplicationStart {
 
     public static void main(String[] args) {
-        SpringApplication.run(AppApplicationStart.class, args);
+        SpringApplication.run(ManagerApplicationStart.class, args);
     }
 
 }

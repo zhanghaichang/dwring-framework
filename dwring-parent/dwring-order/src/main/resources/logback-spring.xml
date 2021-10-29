@@ -8,9 +8,9 @@
     </appender>
     <!-- 文件输出 -->
     <appender name="rollingFile" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>~/data/logs/dwring-customer.log</file>
+        <file>~/data/logs/dwring-order.log</file>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <fileNamePattern>dwring-customer-%d{yyyy-MM-dd}-%i.log</fileNamePattern>
+            <fileNamePattern>dwring-order-%d{yyyy-MM-dd}-%i.log</fileNamePattern>
             <MaxHistory>100</MaxHistory>
             <TimeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
                 <MaxFileSize>50MB</MaxFileSize>
@@ -27,9 +27,9 @@
     </appender>
     <!-- 错误日志输出 -->
     <appender name="errorAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>~/data/logs/dwring-customer_error.log</file>
+        <file>~/data/logs/dwring-order_error.log</file>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <fileNamePattern>dwring-customer_error-%d{yyyy-MM-dd}-%i.log</fileNamePattern>
+            <fileNamePattern>dwring-order_error-%d{yyyy-MM-dd}-%i.log</fileNamePattern>
             <MaxHistory>100</MaxHistory>
             <TimeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
                 <MaxFileSize>50MB</MaxFileSize>

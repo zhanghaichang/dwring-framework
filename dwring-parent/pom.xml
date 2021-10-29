@@ -42,7 +42,10 @@
     <modules>
         <module>dwring-app</module>
         <module>dwring-framework</module>
+        <module>dwring-customer</module>
         <module>dwring-customer-api</module>
         <module>dwring-order-api</module>
+        <module>dwring-order</module>
+        <module>dwring-admin</module>
     </modules>
 </project>
