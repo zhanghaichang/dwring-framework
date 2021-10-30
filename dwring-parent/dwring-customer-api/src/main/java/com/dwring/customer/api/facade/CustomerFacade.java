@@ -1,6 +1,6 @@
 package com.dwring.customer.api.facade;
 
-import com.dwring.customer.api.facade.hystrix.CustomerFacadeHystrix;
+import com.dwring.customer.api.facade.fallback.CustomerFacadeHystrix;
 import com.dwring.customer.api.reponse.QueryCustomerInfoResponse;
 import com.dwring.customer.api.request.QueryCustomerInfoRequest;
 import com.dwring.framework.vo.BaseRequest;

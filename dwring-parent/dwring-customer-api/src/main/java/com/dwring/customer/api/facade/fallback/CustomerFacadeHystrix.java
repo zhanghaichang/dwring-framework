@@ -1,4 +1,4 @@
-package com.dwring.customer.api.facade.hystrix;
+package com.dwring.customer.api.facade.fallback;
 
 import com.dwring.customer.api.facade.CustomerFacade;
 import com.dwring.customer.api.reponse.QueryCustomerInfoResponse;
