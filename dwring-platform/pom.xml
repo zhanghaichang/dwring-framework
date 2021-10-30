@@ -13,6 +13,7 @@
         <module>dwring-cloud-zipkin</module>
         <module>dwring-cloud-sentinel</module>
         <module>dwring-cloud-nacos</module>
+        <module>dwrIng-cloud-kong</module>
     </modules>
 
     <parent>

@@ -8,9 +8,9 @@
     </appender>
     <!-- 文件输出 -->
     <appender name="rollingFile" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>~/data/logs/dwring-app.log</file>
+        <file>~/data/logs/dwring-cloud-management.log</file>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <fileNamePattern>dwring-app-%d{yyyy-MM-dd}-%i.log</fileNamePattern>
+            <fileNamePattern>dwring-cloud-management-%d{yyyy-MM-dd}-%i.log</fileNamePattern>
             <MaxHistory>100</MaxHistory>
             <TimeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
                 <MaxFileSize>50MB</MaxFileSize>
@@ -27,9 +27,9 @@
     </appender>
     <!-- 错误日志输出 -->
     <appender name="errorAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>~/data/logs/dwring-app_error.log</file>
+        <file>~/data/logs/dwring-cloud-management_error.log</file>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <fileNamePattern>dwring-app_error-%d{yyyy-MM-dd}-%i.log</fileNamePattern>
+            <fileNamePattern>dwring-cloud-management_error-%d{yyyy-MM-dd}-%i.log</fileNamePattern>
             <MaxHistory>100</MaxHistory>
             <TimeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
                 <MaxFileSize>50MB</MaxFileSize>
