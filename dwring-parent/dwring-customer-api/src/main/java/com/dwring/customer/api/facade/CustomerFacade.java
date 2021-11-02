@@ -3,8 +3,7 @@ package com.dwring.customer.api.facade;
 import com.dwring.customer.api.facade.fallback.CustomerFacadeHystrix;
 import com.dwring.customer.api.reponse.QueryCustomerInfoResponse;
 import com.dwring.customer.api.request.QueryCustomerInfoRequest;
-import com.dwring.framework.vo.BaseRequest;
-import com.dwring.framework.vo.BaseResponse;
+import com.dwring.framework.vo.RestfulResponse;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -22,5 +21,5 @@ public interface CustomerFacade {
      * @return 返回 customer info
      */
     @PostMapping("/customerInfo")
-    BaseResponse<QueryCustomerInfoResponse> getCustomerInfo(@RequestBody BaseRequest<QueryCustomerInfoRequest> request);
+    RestfulResponse<QueryCustomerInfoResponse> getCustomerInfo(@RequestBody QueryCustomerInfoRequest request);
 }
